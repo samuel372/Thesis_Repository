@@ -1,5 +1,16 @@
 # Financial and ESG PPO experiment
 
+The results presented in the thesis were generated from run
+`20261019_081443_316823Z`, using the processed stock baskets in collection
+`20261019T072942298178Z`.
+
+| Item | Location |
+|---|---|
+| Results report | [MAIN_performance_report.pdf](reports/20261019_081443_316823Z/MAIN_performance_report.pdf) |
+| Processed data and basket assignments | [Data collection](data/collections/20261019T072942298178Z/) and [data manifest](data/collections/20261019T072942298178Z/data_manifest.json) |
+| Recorded experiment settings | [protocol.json](reports/20261019_081443_316823Z/protocol.json) |
+
+
 Open **MAIN_NOTEBOOK.ipynb** to configure and run the experiment. Section 1
 contains the settings, followed by data collection, preparation, PPO training,
 evaluation and report generation. Python calculations live in
