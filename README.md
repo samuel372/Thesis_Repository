@@ -1,15 +1,37 @@
 # Financial and ESG PPO experiment
 
 The results presented in the thesis were generated from run
-`20261019_081443_316823Z`, using the processed stock baskets in collection
+`20261019_081443_316823Z`, using the stock baskets in collection
 `20261019T072942298178Z`.
 
-| Item | Location |
-|---|---|
-| Results report | [MAIN_performance_report.pdf](reports/20261019_081443_316823Z/MAIN_performance_report.pdf) |
-| Processed data and basket assignments | [Data collection](data/collections/20261019T072942298178Z/) and [data manifest](data/collections/20261019T072942298178Z/data_manifest.json) |
-| Recorded experiment settings | [protocol.json](reports/20261019_081443_316823Z/protocol.json) |
+The saved results and data collection are supplied together in a single
+archive, `Thesis_Upload.zip`, available from
+[GitHub Releases](https://github.com/samuel372/Thesis_Repository/releases).
 
+Extract the archive, then copy the `reports/` and `data/` folders from
+inside the extracted `Thesis_Upload/` folder into the project root,
+alongside `MAIN_NOTEBOOK.ipynb` and `src/`. The resulting locations should be:
+
+```text
+MAIN_NOTEBOOK_FOLDER/
+├── MAIN_NOTEBOOK.ipynb
+├── src/
+├── reports/
+│   └── 20261019_081443_316823Z/
+└── data/
+    └── collections/
+        └── 20261019T072942298178Z/
+```
+
+If the project already contains data or reports, merge the folders while
+preserving the existing contents.
+
+The archive includes the performance report, figures, numerical results,
+experiment settings, saved models and collected datasets. Individual daily
+trajectories are omitted to reduce download size, but can be regenerated
+by evaluating the saved models and controls against the supplied data.
+The saved metrics and portfolio-value curves allow the existing report
+and graphs to be regenerated without repeating training or evaluation.
 
 Open **MAIN_NOTEBOOK.ipynb** to configure and run the experiment. Section 1
 contains the settings, followed by data collection, preparation, PPO training,
